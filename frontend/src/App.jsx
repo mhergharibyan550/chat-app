@@ -1,10 +1,11 @@
 import "./App.css";
+import Home from "./pages/home/Home";
 
 function App() {
   return (
-    <>
-      <div>1:45:11</div>
-    </>
+    <div className="p-4 h-screen flex items-center justify-center">
+      <Home />
+    </div>
   );
 }
 
