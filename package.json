@@ -3,13 +3,16 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev": "concurrently \"npm run server --prefix backend\" \"npm run dev --prefix frontend\"",
-    "server": "npm run server --prefix backend",
-    "client": "npm run dev --prefix frontend",
+    "start": "npm run start --prefix backend",
     "build": "npm run build --prefix frontend",
-    "start": "npm run start --prefix backend"
+    "dev:all": "concurrently \"npm run server --prefix backend\"  \"npm run dev --prefix frontend\"",
+    "dev:client": "npm run dev --prefix frontend",
+    "dev:server": "npm run server --prefix backend",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "install:frontend": "npm install --prefix frontend",
+    "install:backend": "npm install --prefix backend"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^9.2.0"
   }
 }

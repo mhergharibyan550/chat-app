@@ -11,6 +11,7 @@ export const useSocketContext = () => {
 
 export const SocketContextProvider = ({ children }) => {
   const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
   const { authUser } = useAuthContext();
   const [socket, setSocket] = useState(null);
   const [onlineUsers, setOnlineUsers] = useState([]);
