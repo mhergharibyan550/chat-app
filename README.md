@@ -1,5 +1,7 @@
 # 💬 ChatAPP
 
+🔗 [Visit ChatAPP](https://chat-app-buhb.onrender.com/)
+
 **ChatAPP** is a real-time messaging web application built using **React**, **Vite**, **NodeJS**, and **ExpressJS**. It features socket-based communication powered by **Socket.IO**, providing users with a smooth and interactive chat experience.
 
 **Note:** _This website was built solely for learning purposes and is not intended for real-world use. Please do not enter any personal or sensitive information._
